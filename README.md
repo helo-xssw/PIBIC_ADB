@@ -19,6 +19,17 @@ O repositório será estruturado para conter:
 #### Status do Projeto
 Em desenvolvimento – fase prática em andamento.
 
+Atualmente:
+- Ambiente configurado
+- Testes iniciais com ADB realizados
+- Análise dos logs em andamento para definição do escopo
+
+#### Próximos Passos
+- Definir dados relevantes para coleta
+- Desenvolver scripts automatizados
+- Realizar testes em ambiente controlado
+- Aplicar coleta em cenários reais
+
 #### Autor
 Heloíse Vitória Cruz Brito
 
