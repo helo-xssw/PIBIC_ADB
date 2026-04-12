@@ -32,6 +32,3 @@ Atualmente:
 
 #### Autor
 Heloíse Vitória Cruz Brito
-
-#### Orientador
-Carlos ALberto Oliveira de Freitas
