@@ -1,6 +1,6 @@
 ## 1. Ambiente Experimental
 
-A coleta de dados foi realizada utilizando um dispositivo móvel **Samsung Galaxy A16**, com sistema operacional Android 16, compatível com redes móveis 4G (LTE) e 5G. A escolha do dispositivo considerou sua capacidade de acesso a tecnologias recentes de comunicação móvel e sua compatibilidade com o Android Debug Bridge (ADB).
+A coleta de dados foi realizada utilizando um dispositivo móvel **Samsung Galaxy A16**, com sistema operacional **Android 16**, compatível com redes móveis 4G (LTE) e 5G. A escolha do dispositivo considerou sua capacidade de acesso a tecnologias recentes de comunicação móvel e sua compatibilidade com o Android Debug Bridge (ADB).
 
 A etapa experimental foi estruturada em duas fases. Inicialmente, a coleta foi conduzida em ambiente controlado de laboratório, com o objetivo de validar os comandos do ADB, compreender o comportamento dos logs gerados e ajustar os parâmetros de coleta. Posteriormente, as coletas serão realizadas em cenário real de uso, incluindo deslocamento do dispositivo, permitindo a análise de variações de sinal, eventos de mobilidade e mudanças de célula em condições práticas.
 
