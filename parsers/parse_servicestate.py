@@ -3,7 +3,6 @@ import sys
 from pathlib import Path
 import pandas as pd
 
-
 if len(sys.argv) < 2:
     print("Uso:")
     print("python parse_servicestate.py <caminho_para_raw.log>")
