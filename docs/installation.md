@@ -4,7 +4,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 ### Hardware
 * **Smartphone Android**
@@ -17,7 +17,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## 🚀 Passo a Passo de Instalação
+## Passo a Passo de Instalação
 
 ### 1. Obter o Projeto
 Clone o repositório para a sua máquina local e acesse a pasta do projeto:
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📱 Configuração do Dispositivo Android
+## Configuração do Dispositivo Android
 
 ### Habilitar a Depuração USB
 No seu smartphone, siga os passos abaixo:
@@ -53,7 +53,7 @@ No seu smartphone, siga os passos abaixo:
 
 ---
 
-## 🔍 Verificação da Conexão
+## Verificação da Conexão
 
 Conecte o smartphone ao computador via cabo USB e execute as validações no terminal:
 
@@ -77,7 +77,7 @@ adb shell
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 Projeto/
@@ -92,7 +92,7 @@ Projeto/
 
 ---
 
-## 📖 Próximos Passos
+## Próximos Passos
 
 Após finalizar a configuração, consulte as documentações específicas para prosseguir:
 
