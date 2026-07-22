@@ -1,116 +1,101 @@
-# Installation Guide
+# Guia de Instalação
 
-Este guia apresenta os requisitos e os passos necessários para configurar o ambiente e executar os scripts de coleta de dados da rede móvel em dispositivos Android.
-
----
-
-# Requirements
-
-## Hardware
-
-- Smartphone Android
-- Cabo USB para conexão com o computador
-
-## Software
-
-- Python 3.10 ou superior
-- Android SDK Platform Tools (ADB)
-- Git (opcional, para clonar o repositório)
+Este guia apresenta os requisitos e o passo a passo necessário para configurar o ambiente e executar os scripts de coleta de dados de rede móvel em dispositivos Android.
 
 ---
 
-# Clone the repository
+## 📋 Pré-requisitos
+
+### Hardware
+* **Smartphone Android**
+* **Cabo USB** (para conexão com o computador)
+
+### Software
+* **Python** 3.10 ou superior
+* **Android SDK Platform Tools (ADB)**
+* **Git** *(opcional, para clonar o repositório)*
+
+---
+
+## 🚀 Passo a Passo de Instalação
+
+### 1. Obter o Projeto
+Clone o repositório para a sua máquina local e acesse a pasta do projeto:
 
 ```bash
 git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-
 cd SEU-REPOSITORIO
 ```
 
----
-
-# Install Python dependencies
-
-Instale as bibliotecas utilizadas pelos parsers.
+### 2. Instalar Dependências do Python
+Instale as bibliotecas necessárias para o funcionamento dos *parsers*:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-# Install Android Platform Tools
-
-Baixe o Android Platform Tools (ADB) no site oficial:
-
-https://developer.android.com/tools/releases/platform-tools
-
-Extraia os arquivos para uma pasta de sua preferência.
-
-Opcionalmente, adicione a pasta do ADB à variável de ambiente PATH.
+### 3. Instalar o Android Platform Tools (ADB)
+1. Baixe o pacote oficial do [Android Platform Tools](https://developer.android.com/tools/releases/platform-tools).
+2. Extraia os arquivos para a pasta de sua preferência.
+3. *(Recomendado)* Adicione o caminho da pasta do ADB à variável de ambiente `PATH` do seu sistema operacional.
 
 ---
 
-# Enable USB Debugging
+## 📱 Configuração do Dispositivo Android
 
-No smartphone:
+### Habilitar a Depuração USB
+No seu smartphone, siga os passos abaixo:
 
-1. Abra **Settings → About phone**.
-2. Toque sete vezes em **Build number** para habilitar as opções de desenvolvedor.
-3. Acesse **Developer options**.
-4. Ative **USB debugging**.
+1. Acesse **Configurações → Sobre o telefone**.
+2. Toque **7 vezes** sobre **Número da versão** (ou *Build number*) até ativar o modo de desenvolvedor.
+3. Volte ao menu principal de configurações e acesse **Opções do desenvolvedor**.
+4. Ative a opção **Depuração USB**.
 
 ---
 
-# Verify ADB connection
+## 🔍 Verificação da Conexão
 
-Conecte o smartphone ao computador e execute:
+Conecte o smartphone ao computador via cabo USB e execute as validações no terminal:
 
+### 1. Validar Conexão do ADB
 ```bash
 adb devices
 ```
 
-A saída deverá ser semelhante a:
+> **Saída esperada:**
+> ```text
+> List of devices attached
+> R58XXXXXXX    device
+> ```
 
-```text
-List of devices attached
-
-R58XXXXXXX    device
-```
-
----
-
-# Verify permissions
-
-Execute:
-
+### 2. Validar Permissões de Shell
 ```bash
 adb shell
 ```
 
-Se o terminal do Android abrir normalmente, a comunicação está funcionando.
+> 💡 **Nota:** Se o terminal de comandos do Android abrir normalmente (ex: `shell@android:/ $`), a comunicação está funcionando corretamente. Digite `exit` para sair.
 
 ---
 
-# Project structure
+## 📁 Estrutura do Projeto
 
-```
+```text
 Projeto/
 │
-├── scripts/
-├── parsers/
-├── experimentos/
-├── docs/
+├── scripts/       # Scripts para coleta de dados
+├── parsers/       # Processadores dos dados coletados
+├── experimentos/  # Configurações e logs de testes
+├── docs/          # Documentação detalhada
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-# Next steps
+## 📖 Próximos Passos
 
-Após concluir a instalação, consulte:
+Após finalizar a configuração, consulte as documentações específicas para prosseguir:
 
-- `docs/scripts.md` — descrição de cada script de coleta.
-- `docs/parsers.md` — utilização dos parsers.
-- `docs/experiments.md` — cenários experimentais.
+* `docs/scripts.md` — Descrição e uso dos scripts de coleta.
+* `docs/parsers.md` — Guia de utilização dos *parsers*.
+* `docs/experiments.md` — Configuração dos cenários experimentais.
