@@ -98,15 +98,15 @@ print(f"[INFO] Android: {ANDROID}")
 print(f"[INFO] Logs serão salvos em:\n{PASTA}\n")
 
 KEYWORDS = [
-    "servicestate",       # Captura a linha mServiceState={...} inteira
-    "voiceregstate",      # Estado de registro de voz (IN_SERVICE, OUT_OF_SERVICE)
-    "dataregstate",       # Estado de registro de dados
-    "operatoralpha",      # Nome da operadora (Long/Short)
-    "earfcn",             # Canal de Radiofrequência LTE
-    "bands",              # Bandas de frequência ativas
-    "carrieraggregation", # Estado do CA (true/false)
-    "networkregistration",# Informações estruturadas de registro na célula
-    "displayinfo"         # Linha mTelephonyDisplayInfo (mostra 5G fake vs real comercial)
+    "servicestate",       
+    "voiceregstate",     
+    "dataregstate",       
+    "operatoralpha",      
+    "earfcn",            
+    "bands",             
+    "carrieraggregation", 
+    "networkregistration",
+    "displayinfo"        
 ]
 
 inicio = time.time()
