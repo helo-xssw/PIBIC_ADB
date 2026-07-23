@@ -4,7 +4,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## Pré-requisitos
+## 📋 Pré-requisitos
 
 ### Hardware
 * **Smartphone Android**
@@ -17,7 +17,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## Passo a Passo de Instalação
+## 🚀 Passo a Passo de Instalação
 
 ### 1. Obter o Projeto
 Clone o repositório para a sua máquina local e acesse a pasta do projeto:
@@ -36,15 +36,15 @@ pip install -r requirements.txt
 
 ### 3. Instalar o Android Platform Tools (ADB)
 1. Baixe o pacote oficial do [Android Platform Tools](https://developer.android.com/tools/releases/platform-tools).
-2. Extraia os arquivos para a pasta de sua preferência.
-3. *(Recomendado)* Adicione o caminho da pasta do ADB à variável de ambiente `PATH` do seu sistema operacional.
+2. Extraia os arquivos para um diretório no seu computador (exemplo: `C:\adb\platform-tools`).
+3. *(Opcional)* Adicione o caminho da pasta do ADB às Variáveis de Ambiente do sistema para poder executar o comando de qualquer diretório.
 
 ---
 
-## Configuração do Dispositivo Android
+## 📱 Configuração do Dispositivo Android
 
 ### Habilitar a Depuração USB
-No seu smartphone, siga os passos abaixo:
+No seu smartphone:
 
 1. Acesse **Configurações → Sobre o telefone**.
 2. Toque **7 vezes** sobre **Número da versão** (ou *Build number*) até ativar o modo de desenvolvedor.
@@ -53,31 +53,64 @@ No seu smartphone, siga os passos abaixo:
 
 ---
 
-## Verificação da Conexão
+## 🔍 Verificação da Conexão ADB
 
-Conecte o smartphone ao computador via cabo USB e execute as validações no terminal:
+1. Conecte o smartphone ao computador via cabo USB.
+2. Abra o terminal (PowerShell ou Prompt de Comando) e navegue até a pasta do Platform Tools:
 
-### 1. Validar Conexão do ADB
-```bash
-adb devices
+   ```powershell
+   cd C:\adb\platform-tools
+   ```
+
+3. Execute o comando de verificação:
+
+   ```powershell
+   .\adb.exe devices
+   ```
+
+> ⚠️ **Atenção (Autorização no Celular):**
+> Na primeira vez em que você rodar este comando, aparecerá um **pop-up de confirmação na tela do smartphone** solicitando permissão para a depuração USB. Marque a opção *"Sempre permitir a partir deste computador"* e confirme.
+
+#### Exemplo de saída no terminal:
+
+Ao rodar pela primeira vez (o serviço ADB será iniciado):
+
+```text
+PS C:\adb\platform-tools> .\adb.exe devices
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
 ```
 
-> **Saída esperada:**
-> ```text
-> List of devices attached
-> R58XXXXXXX    device
-> ```
+Com o dispositivo devidamente autorizado e conectado:
 
-### 2. Validar Permissões de Shell
-```bash
-adb shell
+```text
+PS C:\adb\platform-tools> .\adb.exe devices
+List of devices attached
+RXCXB05KS8L    device
 ```
 
-> 💡 **Nota:** Se o terminal de comandos do Android abrir normalmente (ex: `shell@android:/ $`), a comunicação está funcionando corretamente. Digite `exit` para sair.
+### Validar Permissões de Shell
+Para garantir que o computador possui acesso total de comandos ao dispositivo, execute:
+
+```powershell
+.\adb.exe shell
+```
+
+> 💡 **Nota:** Se o terminal de comandos do Android abrir normalmente (ex: `shell@android:/ $`), a comunicação está funcionando perfeitamente. Digite `exit` para retornar ao PowerShell.
 
 ---
 
-## Estrutura do Projeto
+## 🔒 Dica de Segurança Importante
+
+> 🛡️ **Aviso de Segurança:**
+> Sempre que **concluir a coleta de dados, testes ou o uso do ADB**, lembre-se de **desativar as Opções de Desenvolvedor** (ou ao menos desativar a **Depuração USB**) em seu smartphone (**Configurações → Opções do desenvolvedor**).
+> 
+> Manter o modo de desenvolvedor ou a depuração USB ativos continuamente pode expor seu dispositivo a riscos de segurança caso ele seja conectado a portas USB não confiáveis ou computadores de terceiros.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 Projeto/
@@ -92,10 +125,10 @@ Projeto/
 
 ---
 
-## Próximos Passos
+## 📖 Próximos Passos
 
 Após finalizar a configuração, consulte as documentações específicas para prosseguir:
 
 * `docs/scripts.md` — Descrição e uso dos scripts de coleta.
 * `docs/parsers.md` — Guia de utilização dos *parsers*.
-* `docs/experiments.md` — Configuração dos cenários experimentais.
+* `docs/experiments.md` — Configuração dos cenários experimentais
