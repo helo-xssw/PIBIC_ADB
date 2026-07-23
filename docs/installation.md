@@ -55,6 +55,11 @@ No seu smartphone:
 3. Volte ao menu principal de configurações e acesse **Opções do desenvolvedor**.
 4. Ative a opção **Depuração USB**.
 
+   <img width="3840" height="2160" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)" src="https://github.com/user-attachments/assets/34aa27c0-fffc-47b1-a0e5-9f644060af91" />
+
+<img width="3840" height="2160" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)  (1)" src="https://github.com/user-attachments/assets/fce81caf-aee5-4676-bbec-e0757e69015d" />
+
+
 ---
 
 ## Verificação da Conexão ADB
