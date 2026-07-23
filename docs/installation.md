@@ -55,9 +55,11 @@ No seu smartphone:
 3. Volte ao menu principal de configurações e acesse **Opções do desenvolvedor**.
 4. Ative a opção **Depuração USB**.
 
-   <img width="3840" height="2160" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)" src="https://github.com/user-attachments/assets/34aa27c0-fffc-47b1-a0e5-9f644060af91" />
+<img width="5760" height="3240" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)  (2)" src="https://github.com/user-attachments/assets/0ab9bf60-92dd-4ece-95e4-ff26cb83887a" />
 
-<img width="3840" height="2160" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)  (1)" src="https://github.com/user-attachments/assets/fce81caf-aee5-4676-bbec-e0757e69015d" />
+
+<img width="5760" height="3240" alt="Abra o aplicativo Configurações (Settings) do seu dispositivo Android e deslize até o fim da tela  Toque em Sobre o telefone (About phone)  (3)" src="https://github.com/user-attachments/assets/74cc5d3d-48ab-4032-97e7-48fe15eaca3a" />
+
 
 
 ---
