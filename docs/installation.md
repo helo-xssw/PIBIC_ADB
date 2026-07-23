@@ -98,7 +98,7 @@ Com o dispositivo devidamente autorizado e conectado:
 ```text
 PS C:\adb\platform-tools> .\adb.exe devices
 List of devices attached
-RXCXB05KS8L    device
+RXCXXXXXXXX    device 
 ```
 
 ### Validar Permissões de Shell
