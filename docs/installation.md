@@ -128,11 +128,14 @@ Projeto/
 │
 ├── scripts/       # Scripts para coleta de dados
 ├── parsers/       # Processadores dos dados coletados
-├── experimentos/  # Configurações e logs de testes
+├── experimentos/  # Diretório de saída (gerado/utilizado para salvar os dados e logs da coleta)
 ├── docs/          # Documentação detalhada
 ├── requirements.txt
 └── README.md
 ```
+
+> 💡**Nota sobre a pasta experimentos/:**
+> Esta pasta é destinada ao armazenamento automático dos arquivos de saída, logs e resultados gerados durante a execução dos scripts de coleta e dos parsers.
 
 ---
 
