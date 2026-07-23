@@ -43,6 +43,10 @@ pip install -r requirements.txt
 
 ##  Configuração do Dispositivo Android
 
+> 💡 **Dica de Navegação:**
+> O caminho para ativar o modo de desenvolvedor pode variar dependendo da marca do smartphone (Samsung, Xiaomi, Motorola, etc.).
+> 
+> **A forma mais rápida de encontrar:** Abra o app **Configurações** do seu celular, toque no ícone de **pesquisa (lupa)** no topo da tela e busque por **"Número da versão"** (ou *"Versão do OS"* / *"Versão do MIUI"*).
 ### Habilitar a Depuração USB
 No seu smartphone:
 
