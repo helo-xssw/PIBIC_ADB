@@ -4,7 +4,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 ### Hardware
 * **Smartphone Android**
@@ -17,7 +17,7 @@ Este guia apresenta os requisitos e o passo a passo necessário para configurar 
 
 ---
 
-## 🚀 Passo a Passo de Instalação
+##  Passo a Passo de Instalação
 
 ### 1. Obter o Projeto
 Clone o repositório para a sua máquina local e acesse a pasta do projeto:
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📱 Configuração do Dispositivo Android
+##  Configuração do Dispositivo Android
 
 ### Habilitar a Depuração USB
 No seu smartphone:
@@ -53,7 +53,7 @@ No seu smartphone:
 
 ---
 
-## 🔍 Verificação da Conexão ADB
+## Verificação da Conexão ADB
 
 1. Conecte o smartphone ao computador via cabo USB.
 2. Abra o terminal (PowerShell ou Prompt de Comando) e navegue até a pasta do Platform Tools:
@@ -101,7 +101,7 @@ Para garantir que o computador possui acesso total de comandos ao dispositivo, e
 
 ---
 
-## 🔒 Dica de Segurança Importante
+##  Dica de Segurança Importante
 
 > 🛡️ **Aviso de Segurança:**
 > Sempre que **concluir a coleta de dados, testes ou o uso do ADB**, lembre-se de **desativar as Opções de Desenvolvedor** (ou ao menos desativar a **Depuração USB**) em seu smartphone (**Configurações → Opções do desenvolvedor**).
@@ -110,7 +110,7 @@ Para garantir que o computador possui acesso total de comandos ao dispositivo, e
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```text
 Projeto/
@@ -125,7 +125,7 @@ Projeto/
 
 ---
 
-## 📖 Próximos Passos
+##  Próximos Passos
 
 Após finalizar a configuração, consulte as documentações específicas para prosseguir:
 
